@@ -69,6 +69,21 @@ body {
     animation-delay: .2s;
     background:var(--main-color);
 }
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 9% 2rem;
+    background: var(--bck-color);
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+section.active{
+    visibility: visible;
+    opacity: 1;
+    overflow: auto;
+}
 
 
 .home{
@@ -225,4 +240,49 @@ body {
 @keyframes showRight{
     100%{
         width: 0;}
+}
+
+
+
+.heading{
+    font-size: 4,5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--white-color);
+}
+
+.heading span{
+    color: var(--main-color);}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+}
+.services-container .services-box{
+    padding: 2rem 3.5rem;
+    background: var(--secmain-color);
+    border: -2.8rem solid var(--white-color);
+    border-radius: 5rem;
+}
+.services-box .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-box .icon i{
+    font-size: 4.5rem;
+    color: var(--main-color);
+}
+.services-box .icon a{
+    display:  inline-flex;
+    background: var(--white-color);
+    border-radius: 50%;
+    padding: 1rem;
+}
+.services-box .icon a i{
+    font-size: 3rem;
+    color: var(--bck-color);
+    transform: rotate(225deg);
 }
