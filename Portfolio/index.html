@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="estilos.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-     <script src="codigo js"></script>
+
 
     <header class="header">
         <a href="#" class="logo"><\ Matias Leandro Zarate ></a>
@@ -16,15 +19,15 @@
         <nav class="navbar">
             <a href="#Menu" class="activo">Menu</a>
             <a href="#SobreMi">Sobre Mi</a>
-            <a href="#Conocimientos">Conocimientos</a>
+            <a href="#Experiencia">Experiencia</a>
             <a href="#Proyectos">Proyectos</a>
             <a href="#Redes">Redes</a>
             <a href="#contact">Contact</a>
         </nav>
 
     </header>
-
-    <section class="home ">
+    <!--Seccion Home-->
+    <section class="home">
         <div class="home-content">
             <h1>Hola, soy Matias</h1>
             <h2>Programador</h2>
@@ -48,40 +51,50 @@
         </div>
     </div>
     </section>
-    <section class="services active">
-        <h2 class="heading">Sobre <span>mi</span></h2>
-        <div class="services-container">
-            <div class="services-box">
+
+    <!--Seccion Sobre Mi-->
+    <section class="SobreMi">
+        <h2 class="heading"><span><\</span> Sobre <span>Mi </span>></h2>
+        <div class="SobreMi-container">
+            <div class="SobreMi-box">
                 <div class="icon">
                     <i class='bx bx-code-block'></i>
+                 <a href="#">
                     <i class='bx bx-left-arrow-circle'></i>
+                 </a>   
                 </div>
                 <h3>Conocimientos </h3>
                 <p>HTML, CSS, JavaScript, C++, C#, SQL, Git, GitHub</p>
             </div>
             
-            <div class="services-box">
+            <div class="SobreMi-box">
                 <div class="icon">
                     <i class='bx bxl-visual-studio'></i>
-                    <i class='bx bx-left-arrow-circle'></i>
+                    <a href="#">
+                        <i class='bx bx-left-arrow-circle'></i>
+                    </a>
                 </div>
                 <h3>Proyectos </h3>
-                <p>HTML, CSS, JavaScript, C++, C#, SQL, Git, GitHub</p>
+                <p>Gestion veterinario en consola</p>
             </div>
             
-            <div class="services-box">
+            <div class="SobreMi-box">
                 <div class="icon">
                     <i class='bx bxs-face'></i>
+                    <a href="#">
                     <i class='bx bx-left-arrow-circle'></i>
+                    </a>
                 </div>
                 <h3>Redes Sociales</h3>
                 <p>LinkedIn, Instagram, Facebook</p>
             </div>
             
-            <div class="services-box">
+            <div class="SobreMi-box">
                 <div class="icon">
                     <i class='bx bx-envelope' ></i>
+                    <a href="#">
                     <i class='bx bx-left-arrow-circle'></i>
+                    </a>
                 </div>
                 <h3>Contact</h3>
                 <p>Email, Telefono</p>
@@ -89,5 +102,122 @@
         </div>
     </section>
 
+    <!--Seccion Conocimientos-->
+    <section class="experiencia active ">
+        <div class="experiencia-container">
+            <div class="experiencia-box">
+                <h2 class="cono">Conocimientos</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     magnam, rerum optio.</p>
+                     <button class="experiencia-btn active">Experiencia</button>
+                     <button class="experiencia-btn">Educacion</button>
+                     <button class="experiencia-btn">Skills</button>
+            </div>
+
+            <div class="experiencia-box">
+                <div class="experiencia-detail experiencia active">
+                    <h2 class="heading"><span><\</span> Mi <span>Experiencia </span>></h2>
+                    <p>Experiencia - Experiencia - Experiencia - Experiencia - Experiencia - Experiencia - </p>
+                    <div class="experiencia-list">
+                        <div class="experiencia-item">
+                            <p class="year">2023 - Present</p>
+                            <h3>Especialista PySAT</h3>
+                        <p class="empresa"> Edenor</p>
+                        <p> Descripcion del puesto - Descripcion del puesto - Descripcion del puesto - </p>
+                        </div>
+                        <div class="experiencia-item">
+                            <p class="year">2021 - 2023</p>
+                            <h3>Analista Funcional</h3>
+                            <p class="empresa"> Viu Sa.</p>
+                            <p> Descripcion del puesto - Descripcion del puesto - Descripcion del puesto - </p>
+                        </div>
+                        <div class="experiencia-item">
+                            <p class="year">2015 - 2021</p>
+                            <h3>Administrativo de deposito</h3>
+                            <p class="empresa"> Viu Sa.</p>
+                            <p> Descripcion del puesto - Descripcion del puesto - Descripcion del puesto - </p>
+                        </div>
+                        <div class="experiencia-item">
+                            <p class="year">2010 - 2016</p>
+                            <h3>Repositor</h3>
+                            <p class="empresa"> Jumbo Retail</p>
+                            <p> Descripcion del puesto - Descripcion del puesto - Descripcion del puesto - </p>
+                        </div>   
+                    </div>
+                </div>
+                    <div class="experiencia-detail Educacion">
+                        <h2 class="heading"><span><\</span> Mi <span>Educacion </span>></h2>
+                        <p>Educacion - Educacion - Educacion - Educacion - Educacion - Educacion - Educacion - </p>
+                        <div class="experiencia-list">
+                            <div class="experiencia-item">
+                                <p class="year">2021 - Present</p>
+                                <h3>Tecnico superior en Programación</h3>
+                                <p class="empresa"> UTN - FRGP</p>
+                                <p> Descripcion de la educacion - Descripcion de la educacion - Descripcion de la educacion - </p>
+                            </div>
+                            <div class="experiencia-item">
+                                <p class="year">2021 - Present</p>
+                                <h3>Tecnico superior en Programación</h3>
+                                <p class="empresa"> UTN - FRGP</p>
+                                <p> Descripcion de la educacion - Descripcion de la educacion - Descripcion de la educacion - </p>
+                            </div>
+                            <div class="experiencia-item">
+                                <p class="year">2021 - Present</p>
+                                <h3>Tecnico superior en Programación</h3>
+                                <p class="empresa"> UTN - FRGP</p>
+                                <p> Descripcion de la educacion - Descripcion de la educacion - Descripcion de la educacion - </p>
+                            </div>
+                            <div class="experiencia-item">
+                                <p class="year">2021 - Present</p>
+                                <h3>Tecnico superior en Programación</h3>
+                                <p class="empresa"> UTN - FRGP</p>
+                                <p> Descripcion de la educacion - Descripcion de la educacion - Descripcion de la educacion - </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="experiencia-detail Skills">
+                        <h2 class="heading"><span><\</span> Mis <span>Skills </span>></h2>
+                        <p>Skill - Skill - Skill - Skill - Skill - Skill - Skill - Skill - Skill - Skill - Skill - </p>
+                        <div class="resume-item">
+                            <i class='bx bxl-c-plus-plus'></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-exit-fullscreen'></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-data'></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-html5' ></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-css3' ></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-store'></i>
+                            <span>SAP</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-table' ></i>
+                            <span>Visual Basic</span>
+                        </div>
+                    </div>
+
+            
+            </div>
+        </div>
+    </section>
+     <script src="codigo.js"></script>
 </body>
 </html>

@@ -13,11 +13,17 @@
     --secmain-color: #d3d2d2;
     --black-color:#000;
 }
-
-body {
-    background-color: var(--bck-color);
+html{
+    font-size: 70%;
 }
+body {
+    
+    background-color: var(--bck-color);
+    }
 
+/*
+Pagina principal
+*/
 .header{
     position: fixed;
     top: 0;
@@ -143,13 +149,13 @@ section.active{
     position: absolute;
     top: 3rem;
     display: block;
-    width: 85%;
+    width: 94%;
     object-fit: cover;
     mix-blend-mode: lighten;
 }
 
 .home-content{
-    max-width: 35rem;
+    max-width: 55rem;
 }
 .home-content h1::before{
     content: '';
@@ -165,12 +171,12 @@ section.active{
 
 .home-content h1{
     position: relative;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--white-color);
 }
 .home-content h2{
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     color: var(--main-color);
      text-shadow:
         -1px -1px 0 var(--white-color),
@@ -180,10 +186,10 @@ section.active{
     
 }
 .home-content p{
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     color: var(--white-color);
     margin: 1rem 0 2rem;
-    line-height: 1.3rem;
+    line-height: 2.5rem;
 }
 
 .home-content .btn-sci{
@@ -193,12 +199,12 @@ section.active{
 
 .btn {
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: 1.5rem 3rem;
     background: var(--main-color);
     border:.2rem solid var(--main-color);
     border-radius: 2rem;
-    box-shadow: .1rem .1rem 2rem var(--main-color);
-    font-size: .9rem;
+    box-shadow: .1rem .1rem 3rem var(--main-color);
+    font-size: 1.7rem;
     color: var(--bck-color);
     font-weight: 500;
     transition: .4s;
@@ -235,14 +241,10 @@ section.active{
     opacity: 0.5;
 }
 
-
-/*KEYFRAMES ANIMATION*/
 @keyframes showRight{
     100%{
         width: 0;}
 }
-
-
 
 .heading{
     font-size: 4,5rem;
@@ -253,36 +255,196 @@ section.active{
 
 .heading span{
     color: var(--main-color);}
+/*
+    Seccion Sobre Mi 
+*/
 
-.services-container{
+.SobreMi-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
 }
-.services-container .services-box{
+.SobreMi-container .SobreMi-box{
     padding: 2rem 3.5rem;
     background: var(--secmain-color);
-    border: -2.8rem solid var(--white-color);
-    border-radius: 5rem;
+    border: .2rem solid var(--white-color);
+    border-radius: 6rem;
 }
-.services-box .icon{
+.SobreMi-container .SobreMi-box:hover{
+    border-color: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    transform: translateY(-.5rem);
+    transition: .4s;
+}
+.SobreMi h2.heading{
+    font-size: 3.5rem;
+    margin-bottom: 8rem;
+}
+
+.SobreMi-box .icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.services-box .icon i{
-    font-size: 4.5rem;
+.SobreMi-box .icon i{
+    font-size: 4.8rem;
     color: var(--main-color);
+    transition: .4s;
 }
-.services-box .icon a{
+
+.SobreMi-box:hover .icon :not(a i)
+{
+    color: var(--black-color);
+}
+
+.SobreMi-box .icon a{
     display:  inline-flex;
     background: var(--white-color);
+    scale: 1.4;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.2rem;
+    text-decoration: none;
 }
-.services-box .icon a i{
+.SobreMi-box:hover .icon a
+{
+    background: var(--main-color);
+     
+}
+
+.SobreMi-box .icon a i{
     font-size: 3rem;
     color: var(--bck-color);
     transform: rotate(225deg);
+   }
+.SobreMi-box .icon a:hover i{
+    transform: rotate(180deg);
+}
+
+.SobreMi-box h3{
+    font-size: 2.3rem;
+    color: var(--black-color);
+    margin: .5rem 0 1rem;
+}
+.SobreMi-box:hover h3
+{
+    color: var(--main-color);
+}
+.SobreMi-box p{
+    font-size: 1.5rem;
+    color: var(--black-color);
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/*
+    Seccion Conocimientos
+*/
+.experiencia-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+.experiencia-box{
+    text-align: center;   
+}
+
+.experiencia-box h2{
+    font-size: 3.5rem;
+}
+.experiencia-box h2.cono{
+    font-size: 4rem;
+       text-shadow:
+        -1px -1px 0 var(--white-color),
+         1px -1px 0 var(--white-color),
+        -1px  1px 0 var(--white-color),
+         1px  1px 0 var(--white-color);
+} 
+.experiencia-box p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+.experiencia-box .desc{
+    margin: 2rem 0 2.5rem;
+}
+.experiencia-box .experiencia-btn{
+    width: 90%;
+    height: 5.3rem;
+    background: var(--secmain-color);
+    border: .1rem solid var(--secmain-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    border-radius: 2.8rem;
+    cursor: pointer;
+}
+.experiencia-btn.active{
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.experiencia-detail{
+    display: none;
+}
+.experiencia-detail.active{
+    display: block;
+}
+
+.experiencia-box .heading{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.experiencia-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    height: 45rem;
+    overflow: auto;
+}
+.experiencia-list::-webkit-scrollbar{
+    width: .7rem;
+}
+.experiencia-list::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 1rem;
+}
+.experiencia-list:hover::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+
+.experiencia-list .experiencia-item{
+    background: var(--secmain-color);
+    border-radius: .8rem;
+    padding: 3rem 2.5rem;
+    height: calc((45rem - 2rem)/1.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.experiencia-item .year{
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-top: -5rem;
+    margin-bottom: .5rem;
+}
+.experiencia-item h3{
+    font-size: 2.2rem;
+    color: var(--black-color);
+    margin-bottom: .5rem; 
+}
+.experiencia-item .empresa{
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.experiencia-item .empresa::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+    padding: .3rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    margin-left: -2rem;
 }
