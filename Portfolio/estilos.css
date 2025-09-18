@@ -489,3 +489,90 @@ EXPERIENCIA SKILLS
     opacity: 1;
     transition: scale(1);
 }
+/*
+SECTOR PROYECTOS
+*/
+.proyectos .heading{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+.proyectos-detail{
+    display: none;
+}
+.proyectos-detail.active{
+    display: block;
+}
+
+.proyectos-box .numb{
+    font-size: 8rem;
+    -webkit-text-stroke: .07rem var(--main-color);
+    color:transparent;
+    line-height: 1;
+}
+.proyectos-box h3{
+    font-size: 2.5rem;
+    margin: .8rem 0 2rem;
+    color: var(--secmain-color);
+}
+
+.proyectos-box p {
+    font-size: 1.6rem;
+    color: var(--white-color)
+}
+
+.proyectos-box .tech{
+    margin: 2rem 0;
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: 2rem;
+}
+.proyectos-box .github a{
+    margin-left: 8rem;
+    display: inline-flex;
+    padding: .3rem;
+    font-size: 4rem;
+    color: var(--bck-color);
+    border-radius: 50%;
+    background: var(--white-color);
+    text-decoration: none;
+    transition: .5s;
+}
+.proyectos-box .github a:hover{
+color: var(--main-color);
+}
+
+.proyectos-box .github a:first-child{
+    margin-right: 1-5rem;
+}
+
+.proyectos-box .github a:first-child i{
+    transform: rotate(135deg);
+}
+.proyectos-box .github a span{
+    position: absolute;
+    top: 60%;
+    left: 21.5%;
+    transform: translateX(-45%);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: 2.6rem;
+    pointer-events: none;
+    background: var(--white-color);
+    color: var(--bck-color);
+    opacity: 0;
+    scale: .9;
+    transition: .2s;
+}
+
+.proyectos-box .github a:hover span{
+    top:57%;
+    opacity: 1;
+    scale: 1;
+}
+
