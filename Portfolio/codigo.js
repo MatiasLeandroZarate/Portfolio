@@ -15,3 +15,4 @@ expecienciaBtn.forEach((btn, idx) => {
         experienciaDetail[idx].classList.add('active');
     });
 });
+

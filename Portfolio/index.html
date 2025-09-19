@@ -21,7 +21,6 @@
             <a href="#SobreMi">Sobre Mi</a>
             <a href="#Experiencia">Experiencia</a>
             <a href="#Proyectos">Proyectos</a>
-            <a href="#Redes">Redes</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -220,7 +219,7 @@
     </section>
 
     <!--Seccion Proyectos -->
-    <section class="proyectos active">
+    <section class="proyectos ">
         <<h2 class="heading"><span><\</span> Mis <span>Proyectos </span>></h2>
         <div class="proyectos-container">
             <div class="proyectos-box">
@@ -233,8 +232,8 @@
                         <p>C++</p>
                     </div>
                 <div class="github">
-                    <a href="#"><i class='bx bx-arrow-back' ></i><span>Proyecto</span></a>
-                    <a href="#"><i class='bx bxl-github'></i><span>Repositorio GitHub</span></a>
+                    <a class='flecha' href="#"><i class='bx bx-arrow-back'></i><span>Proyecto</span></a>
+                    <a class='git' href="#"><i class='bx bxl-github'></i><span>Repositorio GitHub</span></a>
                 </div>
                 </div>                
                 <div class="proyectos-detail">
@@ -247,15 +246,61 @@
                     <p class="numb">04</p>
                 </div>
                 
-                <div class="div proyectos-box">
+                <div class="proyectos-box">
                     <div class="proyectos-carusel">
-                        <div class="div img-slide">
+                        <div class="img-slide">
                             <div class="img-item">
-
+                                <img src="img/ProyVeterinario.PNG">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Contact -->
+    <section class="contact active">
+    
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2> Información</h2> 
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, esse consequatur.</p>
+                 <div class="contact-detail">
+                    <i class='bx bxs-phone'></i>
+                    <div class="detail">
+                        <p>Movil</p>
+                        <p>(+54) 11-5874-7868</p>
+                    </div>
+                 </div>
+                 <div class="contact-detail">
+                    <i class='bx bxs-envelope' ></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>M.Zarate92@hotmail.com</p>
+                    </div>
+                 </div>
+                 <div class="contact-detail">
+                    <i class='bx bxs-map'></i>
+                    <div class="detail">
+                        <p>Localidad</p>
+                        <p>Victoria,Buenos Aires</p>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                     <<h2 class="heading"><span><\</span> Contactarte <span>Conmigo </span>></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Nombre Completo" required>
+                        <input type="Email" placeholder="Email" required>
+                        <input type="text" placeholder="Celular" required>
+                        <input type="text" placeholder="Asunto Email" required>
+                        <textarea name="" id="" placeholder="Su Mensaje"required></textarea>
+                    </div>
+                    <button type="submit" class="btn"> Enviar Mensaje</button>
+                </form>
             </div>
         </div>
     </section>
