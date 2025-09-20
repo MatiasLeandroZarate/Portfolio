@@ -48,7 +48,7 @@ Pagina principal
 }
 
 .navbar a:hover,
-.navbar a.activo{
+.navbar a.active{
     color: var(--black-color);
 }
 
@@ -631,6 +631,7 @@ SECTOR PROYECTOS
 }
 .contact-box p{
     font-size: 1.5rem;
+    color: var(--secmain-color);
 }
 
 .contact-box desc{
@@ -662,7 +663,7 @@ SECTOR PROYECTOS
 .contact-box form {
     background: var(--secmain-color);
     padding: 2.5rem 3.5rem 3.5rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     text-align: center;
 }
 .contact-box .heading{
@@ -670,11 +671,76 @@ SECTOR PROYECTOS
 }
 
 .contact-box .field-box{
-    display: grip;
+    display: grid;
     grid-template-columns:repeat(2, 1fr) ;
     gap:2rem;
 }
 
+.contact-box .field-box input,
+.contact-box .field-box textarea{
+    padding: 1.5rem;
+    background: var(--bck-color);
+    border: .15rem solid var(--bck-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
 .contact-box .field-box textarea {
     grid-column: 1 / -1;
+    height: 26rem;
+    resize: none;
+}
+
+.contact-box .field-box input,:focus
+.contact-box .field-box textarea:focus{
+    border-color: var(--main-color) ;
+}
+
+.contact-box .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        padding:2rem 4% ;
+    }
+    section{
+        padding: 10rem 4% 2rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contact-box .field-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #menu-icon{
+        display:block;
+    }
+    nav {
+        position: absolute;
+        top: 100%;
+        left:0;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--bck-color);
+        border-top: 1rem solid rgba(0,0,0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+        text-align: center;
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        margin: 4rem 0;
+    }
 }
