@@ -363,7 +363,7 @@ section.active{
          1px  1px 0 var(--white-color);
 } 
 .experiencia-box p{
-    margin-top:3px;
+    margin-top:2px;
     font-size: 1.6rem;
     color: var(--black-color);
     
@@ -371,6 +371,7 @@ section.active{
 }
 .experiencia-box .desc{
     margin: 2rem 0 2.5rem;
+    color: var(--white-color);
 }
 .experiencia-box .experiencia-btn{
     width: 90%;

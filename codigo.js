@@ -65,3 +65,19 @@ expecienciaBtn.forEach((btn, idx) => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // evita recargar la página
+
+        emailjs.sendForm("TU_SERVICE_ID", "TU_TEMPLATE_ID", this)
+            .then(() => {
+                alert("✅ Tu mensaje fue enviado con éxito. ¡Gracias por contactarme!");
+                form.reset();
+            }, (error) => {
+                console.error("Error:", error);
+                alert("❌ Ocurrió un error al enviar el mensaje. Intenta de nuevo.");
+            });
+    });
+});
