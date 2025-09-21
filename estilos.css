@@ -530,7 +530,7 @@ SECTOR PROYECTOS
 .proyectos-box .github {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* espacio entre círculos */
+    gap: 2rem; 
     margin-top: 2rem;
 }
 
@@ -574,7 +574,6 @@ SECTOR PROYECTOS
 
 .proyectos-box .github a:first-child i{
     align-items: center;
-    transform: rotate(135deg);
 }
 .proyectos-box .github a span {
     position: absolute;
@@ -751,3 +750,9 @@ SECTOR PROYECTOS
         margin: 4rem 0;
     }
 }
+
+/*
+Proximas mejoras:
+- Seccion Sobre Mi, poder redireccionar.
+- Configurar el menu para moviles.
+*/
