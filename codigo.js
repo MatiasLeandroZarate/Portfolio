@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // evita recargar la página
 
-        emailjs.sendForm("TU_SERVICE_ID", "TU_TEMPLATE_ID", this)
+        emailjs.sendForm("service_hprz5eq", "template_x631fmn", this)
             .then(() => {
                 alert("✅ Tu mensaje fue enviado con éxito. ¡Gracias por contactarme!");
                 form.reset();
