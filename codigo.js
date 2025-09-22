@@ -68,16 +68,35 @@ expecienciaBtn.forEach((btn, idx) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
+
   form.addEventListener("submit", async function(event) {
     event.preventDefault();
+
+    const nombre = form.nombre.value.trim();
+    const celular = form.celular.value.trim();
+
+    // Validación de nombre (solo letras y espacios)
+    const nombreRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+    if (!nombreRegex.test(nombre)) {
+      alert("❌ El nombre solo puede contener letras y espacios.");
+      return;
+    }
+
+    // Validación de celular (solo números)
+    const celularRegex = /^[0-9]+$/;
+    if (!celularRegex.test(celular)) {
+      alert("❌ El celular solo puede contener números.");
+      return;
+    }
+
+    // Si todo está bien → enviar a Formspree
     const data = new FormData(form);
     const response = await fetch(form.action, {
       method: form.method,
       body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
+      headers: { 'Accept': 'application/json' }
     });
+
     if (response.ok) {
       alert("✅ ¡Mensaje enviado con éxito!");
       form.reset();

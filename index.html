@@ -306,12 +306,18 @@
             </div>
 
             <div class="contact-box">
-                <form action="https://formspree.io/f/xblzraqj" method="POST" id="contact-form">
+                <form  id="contact-form" action="https://formspree.io/f/xblzraqj" method="POST">
+                    
                      <h2 class="heading"><span><\</span> Contactarte <span>Conmigo </span>></h2>
                     <div class="field-box">
-                        <input type="text" name="nombre" placeholder="Nombre Completo" required>
+
+                        <input type="text" name="nombre" placeholder="Nombre Completo" 
+                            required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" 
+                            title="El nombre solo puede contener letras y espacios">
                         <input type="email" name="email" placeholder="Email" required>
-                        <input type="text" name="celular" placeholder="Celular" required>
+                        <input type="text" name="celular" placeholder="Celular" 
+                            required pattern="^[0-9]+$" 
+                            title="El celular solo puede contener números">
                         <input type="text" name="asunto" placeholder="Asunto Email" required>
                         <textarea id="" name="mensaje"  placeholder="Su Mensaje"required></textarea>
                     </div>
