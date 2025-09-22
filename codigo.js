@@ -65,29 +65,24 @@ expecienciaBtn.forEach((btn, idx) => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function(event) {
     event.preventDefault();
-
-    const formData = {
-      nombre: form.nombre.value,
-      email: form.email.value,
-      celular: form.celular.value,
-      asunto: form.asunto.value,
-      mensaje: form.mensaje.value
-    };
-
-    emailjs.send("service_hprz5eq", "template_x631fmn", formData)
-      .then(() => {
-        alert("✅ Tu mensaje fue enviado con éxito. ¡Gracias por contactarme!");
-        form.reset();
-      }, (error) => {
-        console.error("Error:", error);
-        alert("❌ Ocurrió un error al enviar el mensaje. Intenta de nuevo.");
-      });
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      alert("✅ ¡Mensaje enviado con éxito!");
+      form.reset();
+    } else {
+      alert("❌ Ocurrió un error. Intenta nuevamente.");
+    }
   });
 });
-
-
